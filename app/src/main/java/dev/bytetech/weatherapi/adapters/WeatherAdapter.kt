@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import dev.bytetech.weatherapi.databinding.ListItemBinding
 
 class WeatherAdapter(): ListAdapter<WeatherModel, WeatherAdapter.Holder>(Comparator()) {
@@ -37,7 +36,7 @@ class WeatherAdapter(): ListAdapter<WeatherModel, WeatherAdapter.Holder>(Compara
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-
+        holder.bind(getItem(position))
     }
 
 }

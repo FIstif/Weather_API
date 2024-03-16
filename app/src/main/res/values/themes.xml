@@ -11,7 +11,7 @@
     <style name="Theme.WeatherAPI" parent="Base.Theme.WeatherAPI" />
 
     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/rose</item>
+        <item name="windowSplashScreenBackground">@color/white</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="postSplashScreenTheme">@style/Base.Theme.WeatherAPI</item>
     </style>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="4dp"
     android:backgroundTint="@color/card_back"
     app:cardCornerRadius="10dp"
     app:cardElevation="0dp"
@@ -17,13 +18,14 @@
 
         <TextView
             android:id="@+id/tvDH"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/aubrey"
-            android:text="Data 22/12/2022"
+            android:text="22/12/2022"
             android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tvTemp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,8 +56,9 @@
 
         <TextView
             android:id="@+id/tvTemp"
-            android:layout_width="0dp"
+            android:layout_width="200dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
             android:fontFamily="@font/aubrey"
             android:gravity="center"
             android:text="25C"
@@ -63,7 +66,6 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/tvDH"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

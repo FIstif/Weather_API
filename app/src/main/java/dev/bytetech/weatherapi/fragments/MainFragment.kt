@@ -21,7 +21,7 @@ import dev.bytetech.weatherapi.adapters.WeatherModel
 import dev.bytetech.weatherapi.databinding.FragmentMainBinding
 import org.json.JSONObject
 
-const val API_KEY = "" // enter your API key from this site "https://www.weatherapi.com/"  5289583a9e334c9483752222242102
+const val API_KEY = "" // enter your API key from this site "https://www.weatherapi.com/"
 
 class MainFragment : Fragment() {
     private val fList = listOf(

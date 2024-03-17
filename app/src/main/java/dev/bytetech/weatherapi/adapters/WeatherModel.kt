@@ -1,5 +1,8 @@
 package dev.bytetech.weatherapi.adapters
 
+import android.icu.text.UnicodeFilter
+import android.icu.text.UnicodeSet
+
 
 data class WeatherModel(
     val city: String,

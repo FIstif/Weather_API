@@ -154,7 +154,7 @@ class MainFragment : Fragment() {
 
     private fun requestWeaterData(city: String) {
         val url =
-            "https://api.weatherapi.com/v1/forecast.json?key=$API_KEY&q=$city&days=3&aqi=no&alerts=no"
+            "https://api.weatherapi.com/v1/forecast.json?key=$API_KEY&lang=en&q=$city&days=3&aqi=no&alerts=no"
         val queue = Volley.newRequestQueue(context)
         val request = StringRequest(
             Request.Method.GET,
@@ -207,6 +207,7 @@ class MainFragment : Fragment() {
             mainObject.getJSONObject("current").getJSONObject("condition").getString("icon"),
             weathewItem.hours
         )
+        Log.d("INFVOLLEY", "${item.city}")
         model.liveDataCurrent.value = item
     }
 

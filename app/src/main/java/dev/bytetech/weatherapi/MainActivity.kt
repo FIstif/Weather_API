@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binds = ActivityMainBinding.inflate(layoutInflater)
-        Thread.sleep(1000)
         installSplashScreen()
         setContentView(binds.root)
         supportFragmentManager
